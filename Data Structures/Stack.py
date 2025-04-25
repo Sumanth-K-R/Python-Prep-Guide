@@ -50,7 +50,7 @@ def is_valid_parentheses(s):
         # If the top of the stack is not the corresponding open bracket , returning False
         else:
             return False
-    #Return true if the brackets are balanced
-    return True
+    #Return true if the brackets are balanced i.e stack is empty
+    return True if len(stack) == 0 else False
 
 print(is_valid_parentheses(inp))
